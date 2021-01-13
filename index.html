@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="CSE110 Lab2">
+    <meta name="author" content="Kaiyuan Wang">
+    <title>CSE110 Lab2</title>
+</head>
+
+<body style="background-color:rgb(244, 248, 249);">
+    <header>
+        <h1>Kaiyuan Wang's Lab2 Website</h1>
+        <nav>
+            Checklist: Sectioning | Text Content | Semantics | Multimedia | Forms | Table | Interactive Elements
+        </nav>
+        <aside><p>Something aside</p></aside>
+    </header>
+
+    <main>
+        <section>
+            <h3 style="background-color:rgb(114, 221, 248);">Trying out Text Semantics</h3>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph with <b>Bold</b> and <i>Italic</i></p>
+            <p>This is a paragraph with <big>big</big>, <small>small,</small><sub> and subscript</sub></p>
+            <p style="color:rgb(209, 147, 14);"> This is an <b>Orange</b> paragraph </p>
+            <p><code>This a paragraph about code</code></p>
+            <p>Drawing a Horizontal line:</p>
+            <hr />
+        </section>
+        <h3 style="background-color:rgb(114, 221, 248);">Trying out Multimedia</h3>
+        <p>A random HTML meme:</p>
+        
+        <figure>
+            <img src="https://i.pinimg.com/564x/b6/c0/2a/b6c02a4ad5b3538c4efb6aa194b432a8.jpg" width="200" />
+            <figcaption>Caption: a meme</figcaption>
+        </figure>
+        <p>A DeepFaceLab Sythesized Face-swap Video, Trained by Myself:</p>
+        <video src="result.mov" controls poster="thumb.jpg" width="400"></video>
+
+        <p>A canvas:</p>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #f00505;"></canvas>
+        
+        <hr />
+        <section>
+            <h3 style="background-color:rgb(114, 221, 248);">Trying out Form: </h3>
+            <p><b> Form: </b></p>
+            <form action="/action_page.php" method="get">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <p><b> Optgroup: </b></p>
+            <label for="class">Choose a class:</label>
+            <select name="class" id="class">
+                <optgroup label="CSE">
+                    <option value="CSE100">CSE100</option>
+                    <option value="CSE110">CSE110</option>
+                </optgroup>
+                <optgroup label="ECE">
+                    <option value="ECE45">ECE45</option>
+                    <option value="ECE65">ECE65</option>
+                </optgroup>
+                <optgroup label="MATH">
+                    <option value="MATH18">MATH18</option>
+                    <option value="MATH20D">MATH20D</option>
+                </optgroup>
+            </select>
+
+            <p><b> Fieldset: </b></p>
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend>Personalia:</legend>
+                    <label for="fname"> First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname"> Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email"> Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="birthday"> Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+
+
+            <p><b> 10 Different input types: </b></p>
+            1.<input type="search" />
+            2.<input type="text" value="Enter your username" />
+            3.<input type="password" value="abcd" />
+            4.<input type="button" />
+            5.<input type="checkbox" />
+            6.<input type="color" />
+            7.<input type="date" value="01/12/2021" />
+            8.<input type="range" />
+            9.<input type="file" />
+            10.<input type="number" value=6 />
+
+
+
+
+            <p><b> Textarea: </b></p>
+            <textarea rows=3, cols=30>Express Your Feelings Here:</textarea>
+
+            <p><b> Datalist: </b></p>
+            <label for="lang">Choose your favorite programming language:</label>
+            <input list="lang" name="lang" id="lang">
+            <datalist id="lang">
+                <option value="Python">
+                <option value="Java ">
+                <option value="c++">
+                <option value="HTML">
+                <option value="I don't care">
+            </datalist>
+
+            <p><b> Option: </b></p>
+            <label>Choose your lucky number: </label>
+            <select name="cars" id="cars">
+                <option value="5">5</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+            </select>
+            <hr />
+        </section>
+
+        <section>
+            <h3 style="background-color:rgb(114, 221, 248);">Trying out Table</h3>
+            <table style>
+                <Caption> <b>ML Classes at UCSD:</b></Caption>
+                <colgroup>
+                    <col span="5" style="background-color:rgb(97, 253, 97)">
+                </colgroup>
+                <tr>
+                    <td>CSE150 </td>
+                    <td>CSE151 </td>
+                    <td>CSE152 </td>
+                    <td>CSE156 </td>
+                    <td>CSE158 </td>
+                </tr>
+                <tr>
+                    <td>Intro to AI </td>
+                    <td>Intro to ML </td>
+                    <td>Intro to CV </td>
+                    <td>NLP </td>
+                    <td>Recommender System</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 style="background-color:rgb(114, 221, 248);">Trying out Interactive Element</h3>
+            <p><b> Summary & Detail: </b></p>
+            <details>
+                <summary>HTML Introduction</summary>
+                <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be
+                    displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS)
+                    and scripting languages such as JavaScript.</p>
+                <p>Web browsers receive HTML documents from a web server or from local storage
+                    and render the documents into multimedia web pages.
+                    HTML describes the structure of a web page semantically and
+                    originally included cues for the appearance of the document.
+                </p>
+            </details>
+            <p><b> Button: </b></p>
+            <button type="button">Click Me!</button>
+
+            <p><b> Template: </b></p>
+            <button onclick="showContent()">Show hidden content</button>
+            <template>
+                <p>You've Discovered It!</p>
+                <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Poop_Emoji_7b204f05-eec6-4496-91b1-351acc03d2c7_grande.png?v=1571606036" width="50" height="50">
+            </template>
+
+            <script>
+                function showContent() {
+                    var temp = document.getElementsByTagName("template")[0];
+                    var clon = temp.content.cloneNode(true);
+                    document.body.appendChild(clon);
+                }
+            </script>
+            <hr />
+        </section>
+    </main>
+
+    <footer>
+        <p><b> Write a footer: </b></p>
+        <p>A crappy website made by Kaiyuan Wang</p>
+    </footer>
+
+
+
+
+</body>
+</html>
+
+
 
