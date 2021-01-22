@@ -20,12 +20,11 @@
         <nav>
             Checklist: Comments | Colors | Backgrounds | Borders | Unit | Box | Text/Font | Display | Max/Min-width | Position | Pseudo-class | Flexbox | Grid | Media Query
         </nav>
-        <aside><p>Something aside</p></aside>
     </header>
 
     <main>
-        <section>
-            <h3 class="section" >Trying out Text Semantics</h3>
+        <section class="section">
+            <h3>1. Trying out Text Semantics</h3>
             <p important> This is a paragraph</p>
             <p>This is a paragraph with <b>Bold</b> and <i>Italic</i></p>
             <p>This is a paragraph with <small>small,</small><sub> and subscript</sub></p>
@@ -34,7 +33,8 @@
             <p>Drawing a Horizontal line:</p>
             <hr />
         </section>
-        <h3 class="section" id="highlight">Trying out Multimedia</h3>
+        <section class="section">
+            <h3> 2. Trying out Multimedia</h3>
         <p>A random HTML meme:</p>
         
         <figure>
@@ -46,10 +46,12 @@
 
         <p>A canvas:</p>
         <canvas id="myCanvas" width="200" height="100" style="border:1px solid #f00505;"></canvas>
-        
+        x
         <hr />
-        <section>
-            <h3 class="section">Trying out Form: </h3>
+        </section>
+        
+        <section class="section">
+            <h3>3. Trying out Form: </h3>
             <p><b> Form: </b></p>
             <form action="/action_page.php" method="get">
                 <label for="fname">First name:</label>
@@ -77,7 +79,7 @@
             </select>
 
             <p><b> Fieldset: </b></p>
-            <form action="/action_page.php">
+            <form action="/action_page.php" class="box">
                 <fieldset>
                     <legend>Personalia:</legend>
                     <label for="fname"> First name:</label>
@@ -133,9 +135,9 @@
             <hr />
         </section>
 
-        <section>
-            <h3 class="section">Trying out Table</h3>
-            <table style>
+        <section class="section">
+            <h3>Trying out Table</h3>
+            <table class="halfandcenter">
                 <Caption> <b>ML Classes at UCSD:</b></Caption>
                 <colgroup>
                     <col span="5" style="background-color:rgb(97, 253, 97)">
@@ -157,8 +159,8 @@
             </table>
         </section>
 
-        <section>
-            <h3 class="section">Trying out Interactive Element</h3>
+        <section class="section">
+            <h3>Trying out Interactive Element</h3>
             <p><b> Summary & Detail: </b></p>
             <details>
                 <summary>HTML Introduction</summary>

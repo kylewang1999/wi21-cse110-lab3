@@ -1,8 +1,18 @@
 
-/*Selectors*/
+
 /*Class Selector*/
 .section{
-    background-color:rgb(114, 248, 208);
+    background-color:hsl(167, 83%, 88%);
+    border-style: groove;
+    border-color: #eeaa44;
+    border-width:5px;
+    border-radius:5%;
+}
+
+.halfandcenter{
+   width: 50 vw;
+   margin-left: auto;
+   margin-right: auto;
 }
 /*ID Selector*/
 #highlight{
@@ -10,11 +20,14 @@
 }
 /*Universal Selector*/
 *{
-    color: rgb(4, 4, 4); font: Times
+    color: rgba(4, 4, 4, 0.8); font: Times
 }
 /*Element Selector*/
 h1{
     background-color:rgb(177, 180, 179);
+    color:#000;
+    text-align: center; 
+    text-decoration: overline;
 }
 /*Attribute Selector*/
 p[important] {
@@ -22,11 +35,23 @@ p[important] {
 }
 /*Pseudo-class Selector*/
 green:pseudo-class {
-    color: rgb(91, 255, 126);
+    color: hsla(120,100%,50%,0.3);
 }
 /*Grouping Selector3*/
-h1, h2, h3{
+h2, h3{
     text-align: center;
-    color: red;
-  }
+    color: rgb(15, 133, 187);
+    border-bottom: 5px solid rgb(1, 188, 245);
+}
 
+/*Box Model*/
+.box{
+    background-color: rgb(226, 222, 222);
+    width: 300px;
+    border: 15px solid rgb(0, 105, 128);
+    padding: 50px;
+    margin-top: 30px;
+    margin-left: 25vw;
+}
+
+/*External Font*/
