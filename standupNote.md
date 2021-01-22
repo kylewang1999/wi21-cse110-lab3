@@ -17,4 +17,4 @@ Tips:
 
 Use this 15-minute meeting to check the pulse on your work and stay on top of your sprint
 Remember: Problem-solving is not part of scrum (although it can take place informally right after).
-Personalize this template with an update section with the name of each engineer
+Personalize this template with an update section with the name of each engineer.
