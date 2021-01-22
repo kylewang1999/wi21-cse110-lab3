@@ -1,0 +1,32 @@
+
+/*Selectors*/
+/*Class Selector*/
+.section{
+    background-color:rgb(114, 248, 208);
+}
+/*ID Selector*/
+#highlight{
+    color: red
+}
+/*Universal Selector*/
+*{
+    color: rgb(4, 4, 4); font: Times
+}
+/*Element Selector*/
+h1{
+    background-color:rgb(177, 180, 179);
+}
+/*Attribute Selector*/
+p[important] {
+    background-color: yellow;
+}
+/*Pseudo-class Selector*/
+green:pseudo-class {
+    color: rgb(91, 255, 126);
+}
+/*Grouping Selector3*/
+h1, h2, h3{
+    text-align: center;
+    color: red;
+  }
+
