@@ -28,7 +28,26 @@ h1{
     color:#000;
     text-align: center; 
     text-decoration: overline;
+    /*External Font*/
+    font-family: 'Dancing Script', cursive;
+    position:sticky; position: -webkit-sticky;
 }
+p{max-width: 75vw; position:static}
+
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+    max-width: 50vw;
+  }
+
 /*Attribute Selector*/
 p[important] {
     background-color: yellow;
@@ -44,14 +63,95 @@ h2, h3{
     border-bottom: 5px solid rgb(1, 188, 245);
 }
 
-/*Box Model*/
-.box{
-    background-color: rgb(226, 222, 222);
-    width: 300px;
-    border: 15px solid rgb(0, 105, 128);
-    padding: 50px;
-    margin-top: 30px;
-    margin-left: 25vw;
+/*Display Properties*/
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block; color:red; }
+p.ex4 {display: inline-block; color:red}
+
+/*Pasudo Class*/
+a:hover {
+    color: #FF00FF;
+}
+a:active {
+    color: #17f96d;
 }
 
-/*External Font*/
+
+
+/*Flexbox*/
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 100px;
+    height: 75p;
+    margin-top: 10px;
+    line-height: 75px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+
+/*Grid*/
+body {
+margin: 50px;
+}
+
+.wrapper {
+display: grid;
+grid-template-columns: 100px 100px 100px 100px;
+grid-gap: 10px;
+background-color: #fff;
+color: #444;
+margin-left: auto;
+margin-right: auto;
+width: 50vw;
+
+}
+
+.box {
+background-color: #444;
+color: #fff;
+border-radius: 5px;
+padding: 20px;
+font-size: 150%;
+margin-left:10px;
+}
+  
+/*Media Query*/
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: lightblue;
+    }
+    .section{
+        background-color:hsl(29, 84%, 88%);
+        border-style: groove;
+        border-color: #eeaa44;
+        border-width:5px;
+        border-radius:5%;
+    }
+  }
+  
+  
+  

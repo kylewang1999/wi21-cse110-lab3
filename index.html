@@ -2,6 +2,8 @@
 
 
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="description" content="CSE110 Lab2">
     <meta name="author" content="Kaiyuan Wang">
@@ -16,22 +18,27 @@
 
 <body style="background-color:rgb(244, 248, 249);">
     <header>
-        <h1>Kaiyuan Wang's Lab3 Website</h1>
-        <nav>
+        <div class="sticky"><h1>Kaiyuan Wang's Lab3 Website</h1></div>
+        
+        <div class="static">
             Checklist: Comments | Colors | Backgrounds | Borders | Unit | Box | Text/Font | Display | Max/Min-width | Position | Pseudo-class | Flexbox | Grid | Media Query
-        </nav>
+        </div>
+        <p><b><a href="https://github.com/kylewang1999" target="_blank">Link to my github page</a></b></p>
     </header>
 
     <main>
         <section class="section">
             <h3>1. Trying out Text Semantics</h3>
-            <p important> This is a paragraph</p>
-            <p>This is a paragraph with <b>Bold</b> and <i>Italic</i></p>
+            <p important> This is a  important paragraph</p>
+            <p class_>This is a paragraph with <b>Bold</b> and <i>Italic</i></p>
             <p>This is a paragraph with <small>small,</small><sub> and subscript</sub></p>
             <p style="color:rgb(209, 147, 14);"> This is an <b>Orange</b> paragraph </p>
             <p><code><green >This a paragraph about code</green></code></p>
-            <p>Drawing a Horizontal line:</p>
             <hr />
+            <p>Attempting Inline-Block: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, <p class="ex3"> Haha: Block </p> at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p> 
+            <p>Attempting Inline-Block: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, <p class="ex4"> Haha: Inline Block </p> at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p> 
+            
+            
         </section>
         <section class="section">
             <h3> 2. Trying out Multimedia</h3>
@@ -192,16 +199,48 @@
             </script>
             <hr />
         </section>
+
+        <section class="section">
+            <h3>Flex Box and Grid</h3>
+            <p><b> Flex Box: </b></p>
+            <h1> There are 7 days in a Week</h1>
+            <ul class="flex-container">
+                <li class="flex-item">Sun</li>
+                <li class="flex-item">Mon</li>
+                <li class="flex-item">Tue</li>
+                <li class="flex-item">Wed</li>
+                <li class="flex-item">Thur</li>
+                <li class="flex-item">Fri</li>
+                <li class="flex-item">Sat</li>
+            </ul>
+
+            <p><b> Grid: </b></p>
+            <h1> There are 12 months in a year</h1>
+            <div class="wrapper">
+                <div class="box a">Jan.</div>
+                <div class="box b">Feb.</div>
+                <div class="box c">Mar.</div>
+                <div class="box d">Apr.</div>
+                <div class="box e">May.</div>
+                <div class="box f">June</div>
+                <div class="box f">July</div>
+                <div class="box f">Aug.</div>
+                <div class="box f">Sep.</div>
+                <div class="box f">Oct.</div>
+                <div class="box f">Nov.</div>
+                <div class="box f">Dec.</div>
+            </div>
+        </section>
     </main>
+
+    <section class="section">
+        <h3>Media Query</h3>
+    </section>
 
     <footer>
         <p><b> Write a footer: </b></p>
         <p>A crappy website made by Kaiyuan Wang</p>
     </footer>
-
-
-
-
 </body>
 </html>
 
